@@ -1,16 +1,5 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+  overflow-y: auto;
 }
 .logo {
   width: 18%;
@@ -46,28 +35,47 @@
   color: white;
 }
 .sec-2{
-  font-family: Proxima Nova AltBold;
+  color: white;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+  display: flex;
+  margin-left: 5%;
+}
+.sec-2-a{
   font-size: 3rem;
   line-height: 1;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(58 214 118/var(--tw-text-opacity));
+  display: inline-block;
 }
 .separator{
   height: 3.5rem;
   align-items: center;
   justify-content: center;
-  border-left: black solid 2px;
+  border-left: white solid 1px;
+  display: inline-block;
+  margin-left: 20px;
+
 }
 .triangle-right {
+  margin-right: 11px;
+  margin-top: 15px;  
+  display: inline-block;
   width: 0;
 	height: 0;
 	border-top: 10px solid transparent;
-	border-left: 20px solid black;
+	border-left: 9px solid white;
 	border-bottom: 10px solid transparent;
 }
+.sec-2-pra {
+  margin-top: 10px;
+  display: inline-block;
+
+}
 .soc-list li {
-  background-color: black;
+  background-color: rgba(218, 218, 218, 0.3);
   width: fit-content;
   margin: 5px;
   padding: 6px 12px 11px 13px;
@@ -92,6 +100,102 @@
   -webkit-animation: mover 3s infinite  alternate;
   animation: mover 3s infinite  alternate;
 }
+.Home-email {
+  --darkreader-border--tw-border-opacity: 0.7;
+  background-color: rgba(0, 0, 0, 0.3);
+  --darkreader-bg--tw-bg-opacity: 0.3;
+  --darkreader-text--tw-text-opacity: 1;
+  color: white;
+  outline-color: transparent;
+  font-size: 1.2rem;
+  border-radius: 1.5rem;
+  width: calc(26.2rem);
+  padding: 0.75rem 0 0.75rem 1.5rem;
+  border: rgb(240, 240, 240) solid 1px;
+}
+input:focus {
+  background-color: rgba(0, 0, 0, 0.3);
+  outline: none;
+  border-color: 'black';
+}
+.home-form {
+  margin-top: 2%;
+  margin-left: 5%;
+}
+.pra-form{
+  display: inline-block;
+  margin-top: 20px;
+  color: white;
+
+}
+.form-paragraph {
+  text-align: justify;
+  font-size: calc(.65rem);
+  width: 30%;
+  display: inline-block;
+}
+input[type="checkbox"] {
+  appearance: none;
+  margin: 0;
+  font: inherit;
+  color: rgb(255, 255, 255, 0.3);
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 0.5px solid currentColor;
+  border-radius: 6px;
+  transform: translateY(-0.075em);
+  margin: 10px 15px 35px 0px
+}
+/* input[type="checkbox"]::before {
+  background-color: #fe00fe;
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+} */
+/* .checkbox {
+  border: white solid 2px;
+  display: inline-block;
+  background: #f35429;
+  border-radius: 10rem;
+  height: 1.25rem;
+  width: 1.25rem;
+  margin: 10px;
+  margin-top: -100px;
+}
+*/
+
+input:checked {
+  /* background-color: #fe00fe; */
+  color: white;
+  transform-origin: bottom left;
+  /* clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%); */
+} 
+
+.privacy {
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}
+a{
+  text-decoration: none;
+}
+.btn{
+  border-radius: 1.5rem;
+  background-color: white;
+  color: black;
+  padding: 0.75rem 3rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.btn:hover {
+  display: none;
+    background-color: rgb(189, 6, 193);
+    color: rgb(232, 230, 227);
+}
+
 
 @-webkit-keyframes mover {
   0% { transform: translateY(0); }

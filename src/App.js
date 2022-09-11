@@ -60,19 +60,39 @@ function App() {
       </ul> 
       
       <div className='sec-1'>
-      <h1 className='sec-1-a'>
-        Join our
-        <br/>
-        waiting list
+        <h1 className='sec-1-a'>
+          Join our
+          <br/>
+          waiting list
         </h1>
         <h2 className='sec-1-b'>
           Sign up for our app &amp; get
         </h2>
-        <div className='sec-2'>$100 </div>
-        <div> <div className='separator'></div><div class="triangle-right"></div> to trade when we launch!</div>
-        
+      </div>
+      <div className='sec-2'>
+        <div className='sec-2-a'>$100 </div> 
+        <div className='separator'></div>
+        <div className="triangle-right"></div> 
+        <div className='sec-2-pra' >to trade when we launch!</div> 
       </div>
       <img className='phone-img' src={phoneImg} alt="phoneImg" />
+
+      <div className='home-form'>
+        <input type="email" className="Home-email" placeholder="Enter Email Address" required="" value="" />
+
+        <div className='pra-form'>
+          <input className='checkbox' type="checkbox" />
+            <p className='form-paragraph'> 
+              I agree and understand that Amana has a legitimate interest in contacting me about its products and services or 
+              for other marketing purposes. I also understand that I can opt out of receiving marketing communications and acquire further 
+              information on how my data will be processed by referring to the company’s <a href="https://amana.app/join-now/pdf/privacy-policy.pdf" target="_blank"><span className='privacy'>Privacy Policy.</span> </a> 
+            </p>
+
+        </div>
+
+          <button className='btn'>Join us now</button>
+      </div>
+
     
     </div>
   );
